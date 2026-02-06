@@ -26,8 +26,8 @@ int value_top = -1;
 * `main()`: The main fuction performs following operations:<br>
           - Declares a character array to store the expression<br>
           - Aceepts the expression from the user<br>
-          - Calls the isbalanced() function<br>
-          - Displays whether the expression is balanced or not<br>
+          - Calls the `infix_to_postfix` function<br>
+          - Displays the evaluated postfix expression<br>
 * `void infix_to_prefix(char infix[],char prefix[]){}`:
           This function converts the provide infix expression to it postfix form.
 * `int evaluate_postfix(char postfix[]){}`: This function performs the evaluation on
