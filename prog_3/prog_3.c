@@ -6,13 +6,14 @@ struct node{
     struct node* next;
 };
 
+//defining a function create a nod
 struct node* create_new_node(int value){
     struct node* new_node = (struct node*)malloc(sizeof(struct node));
     new_node->data = value;
     new_node->next = NULL;
     return new_node;
 }
-
+//This function traverse and print the node in reverse order
 void reverse_traverse(struct node *head){
     if(head == NULL){
         return;
@@ -26,7 +27,7 @@ int main(){
     struct node* temp = NULL;
     char again = 'Y';
     int value;
-
+    //Asking input from the user
     while (again == 'Y' || again == 'y'){
         printf("Enter the node for the linked list: ");
         scanf("%d", &value);
