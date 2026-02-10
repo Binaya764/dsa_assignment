@@ -1,1 +1,3 @@
-# Traversal using DFS nas BFS
+# Traversal using DFS and BFS
+
+
