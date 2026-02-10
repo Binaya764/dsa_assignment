@@ -7,7 +7,7 @@ void swap(int *a, int *b){
     *a = *b;
     *b = temp;
 }
-
+//compares the adjacent elements and swaps if the next element is greater
 void bubble_sort(int arr[], int size){
     for(int i=0; i<size-1;i++){
         for (int j = 0; j<size-i-1;j++){
@@ -20,7 +20,7 @@ void bubble_sort(int arr[], int size){
 
     }
 }
-
+//finds the smallest element first and swaps it according to order
 void selection_sort(int arr[], int size) {
     for (int i = 0; i < size - 1; i++) {
         int min = i;
