@@ -3,7 +3,7 @@
     The objective of this program is to convert an infix expression to a postfix operation
     and perform the evaluation.
 
-### Defining Data-Structures:
+### (a)Defining Data-Structures:
 ```c
 #include<ctype.h>   
 #define size 20
@@ -22,7 +22,7 @@ int value_top = -1;
 * `value_stack[size]`: sets a character  array for value of defined size
 * `value_top = -1` initializes the top of the value stack to be -1
 
-### Functions
+### (b)Functions
 * `main()`: The main fuction performs following operations:<br>
           - Declares a character array to store the expression<br>
           - Aceepts the expression from the user<br>
@@ -33,4 +33,21 @@ int value_top = -1;
 * `int evaluate_postfix(char postfix[]){}`: This function performs the evaluation on
           the postfix expression
 * `int precedance(char x){}`: sets the precedance and returns higher for higher precedance
+---
 
+### (c) Main Method 
+
+The `main()` function serves as the driver:
+1.  **Input**: Collects an infix string from the user.
+2.  **Conversion**: Calls `infix_to_postfix` and displays the resulting string.
+3.  **Evaluation**: Calls `evaluate_postfix` on the new string and prints the final integer value.
+
+---
+### (d) Sample Output
+
+If you enter an expression like `(2+3)*4`, the program follows these steps:
+
+```text
+Enter the infix expression: (2+3)*4
+Postfix expression: 23+4*
+Result: 20
